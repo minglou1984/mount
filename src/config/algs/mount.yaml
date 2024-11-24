@@ -1,0 +1,58 @@
+# --- IPPO specific parameters ---
+
+action_selector: "soft_policies"
+mask_before_softmax: True
+
+runner: "mount_parallel"
+
+buffer_size: 20
+batch_size_run: 20
+batch_size: 20
+
+# update the target network every {} training steps
+target_update_interval_or_tau: 0.001
+
+lr: 0.0005
+
+obs_agent_id: True
+obs_last_action: False
+obs_individual_obs: False
+
+agent_output_type: "pi_logits"
+learner: "mount_learner"
+entropy_coef: 0.01
+use_rnn: False
+standardise_returns: True
+standardise_rewards: False
+q_nstep: 5 # 1 corresponds to normal r + gammaV
+critic_type: "conditional_ac_critic"
+epochs: 4
+eps_clip: 0.2
+name: "mount"
+
+# -----------------------------------
+lamda_decay: 'linear'
+mac: "mount_mac"
+agent: "conditional_rnn"
+
+latent_dim: 5
+
+rec_obs: True
+rec_rew: True
+
+am_type: 'viam'
+use_vae_rnn: True
+vae_hidden_dim: 64
+encoder_input_obs: True
+encoder_input_act: True
+encoder_input_rew: True
+encoder_input_terminated: False
+
+decoder_input_obs: True
+decoder_input_act: True
+
+obs_loss_coef: 1.0
+rew_loss_coef: 1.0
+kl_loss_coef: 0.001
+
+am_lr: 0.001
