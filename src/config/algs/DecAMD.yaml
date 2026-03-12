@@ -40,7 +40,7 @@ latent_dim: 5
 rec_obs: True
 rec_rew: True
 
-am_type: 'viam'
+am_type: 'amd'
 use_vae_rnn: True
 vae_hidden_dim: 64
 encoder_input_obs: True
