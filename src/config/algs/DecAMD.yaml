@@ -3,7 +3,7 @@
 action_selector: "soft_policies"
 mask_before_softmax: True
 
-runner: "mount_parallel"
+runner: "decamd_parallel"
 
 buffer_size: 20
 batch_size_run: 20
@@ -19,7 +19,7 @@ obs_last_action: False
 obs_individual_obs: False
 
 agent_output_type: "pi_logits"
-learner: "mount_learner"
+learner: "decamd_learner"
 entropy_coef: 0.01
 use_rnn: False
 standardise_returns: True
@@ -28,11 +28,11 @@ q_nstep: 5 # 1 corresponds to normal r + gammaV
 critic_type: "conditional_ac_critic"
 epochs: 4
 eps_clip: 0.2
-name: "mount"
+name: "decamd"
 
 # -----------------------------------
 lamda_decay: 'linear'
-mac: "mount_mac"
+mac: "decamd_mac"
 agent: "conditional_rnn"
 
 latent_dim: 5
