@@ -1,1 +1,1 @@
-# Official codebase for MOUNT based on EPyMARL framework
+# Official codebase for DecAMD based on EPyMARL framework
