@@ -4,7 +4,7 @@ from modules.agent_modeling import REGISTRY as am_REGISTRY
 import torch as th
 
 # This multi-agent controller shares parameters between agents
-class MOUNTMAC:
+class DecAMDMAC:
     def __init__(self, scheme, groups, args):
         self.n_agents = args.n_agents
         self.args = args
