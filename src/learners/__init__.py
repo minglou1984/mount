@@ -1,5 +1,5 @@
-from .mount_learner import MOUNTLearner
+from .decamd_learner import DecAMDLearner
 REGISTRY = {}
 
 
-REGISTRY["mount_learner"] = MOUNTLearner
+REGISTRY["decamd_learner"] = DecAMDLearner
