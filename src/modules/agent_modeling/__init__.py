@@ -1,6 +1,6 @@
 REGISTRY = {}
 
-from .VIAM import VIAM
+from .AMD import AMD
 
 
-REGISTRY["viam"] = VIAM
+REGISTRY["amd"] = AMD
