@@ -3,9 +3,9 @@ import torch.nn as nn
 from modules.agent_modeling.autoencoder.ae_model import ProbabilisticEncoder, Decoder
 
 
-class VIAM(nn.Module):
+class AMD(nn.Module):
     def __init__(self, scheme, args):
-        super(VIAM, self).__init__()
+        super(AMD, self).__init__()
         self.args = args
         self.n_agents = args.n_agents
 
