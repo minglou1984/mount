@@ -1,7 +1,7 @@
 REGISTRY = {}
 
 from .basic_controller import BasicMAC
-from .mount_controller import MOUNTMAC
+from .decamd_controller import DecAMDMAC
 
 REGISTRY["basic_mac"] = BasicMAC
-REGISTRY["mount_mac"] = MOUNTMAC
+REGISTRY["decamd_mac"] = DecAMDMAC
